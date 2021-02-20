@@ -30,7 +30,7 @@
   --color-links: #ffffff;
   --color-background: #2c3e50;
   --color-text: #ffffff;
-  --color-button: #16a085;
+  --color-button: #40739e;
 
   /* Typography */
   --body-font: "Nunito", sans-serif;
@@ -251,7 +251,7 @@ img {
 /* Buttons */
 .button {
   display: inline-block;
-  background-color: var(--color-icon-close);
+  background-color: var(--color-button);
   text-align: center;
   color: var(--color-links);
   padding: 1rem 2rem;
@@ -332,30 +332,44 @@ img {
 
 .skills__html {
   width: 85%;
-  animation-timing-function: ease-in-out;
-  transition: 0.25s;
-  transition-duration: 1s;
+  animation: slidein 3s;
 }
 .skills__js {
   width: 80%;
+  animation: slidein 3s;
 }
 .skills__react {
   width: 65%;
+  animation: slidein 3s;
 }
 .skills__vue {
   width: 55%;
+  animation: slidein 3s;
 }
 .skills__wp {
   width: 90%;
+  animation: slidein 3s;
 }
 .skills__php {
   width: 60%;
+  animation: slidein 3s;
 }
 .skills__node {
   width: 65%;
+  animation: slidein 3s;
 }
 .skills__mysql {
   width: 80%;
+  animation: slidein 3s;
+}
+
+@keyframes slidein {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
 }
 
 /* Education */
