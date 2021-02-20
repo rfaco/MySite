@@ -251,7 +251,7 @@ img {
 /* Buttons */
 .button {
   display: inline-block;
-  background-color: var (var(--color-primary));
+  background-color: var(--color-icon-close);
   text-align: center;
   color: var(--color-links);
   padding: 1rem 2rem;
@@ -261,7 +261,7 @@ img {
 }
 
 .button:hover {
-  background-color: var(--color-button);
+  background-color: var(--color-primary);
 }
 
 /* About */
@@ -555,11 +555,11 @@ img {
 /* Media Queries */
 @media screen and (min-width: 768px) {
   .home__button {
-    display: flex;
+    width: fit-content;
+    margin: auto;
     justify-content: center;
     margin-top: -20px;
-  }
-  .home__button:hover {
+    text-align: center;
   }
   .nav__menu {
     width: var(--nav-width);
@@ -588,5 +588,50 @@ img {
   }
   .about__information {
     padding-left: 4rem;
+  }
+  .section-title {
+    margin-bottom: 1.5rem;
+  }
+  .project {
+    background: none;
+  }
+  .education__university,
+  .education__year,
+  .education__race {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    margin: 0;
+    padding-left: var(--nav-width);
+  }
+
+  .l-header {
+    width: 0;
+  }
+  .nav__toggle,
+  .nav__logo,
+  .nav__close {
+    display: none;
+  }
+  .nav__menu {
+    left: 0;
+  }
+  .home__container {
+    height: 100vh;
+  }
+  .section {
+    padding: 3rem 0 2rem;
+  }
+  .bd-grid {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
