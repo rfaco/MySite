@@ -1,0 +1,117 @@
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap");
+
+/* Variables */
+
+:root {
+  --header-height: 3rem;
+  --nav-width: 324px;
+
+  /* Margin */
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+
+  /* Z Index */
+  --z-fixed: 100;
+
+  /* Font  */
+  --font-regular: 200;
+  --font-semi-bold: 400;
+  --font-bold: 700;
+
+  /* Colors */
+  --color-primary: #16a085;
+  --color-secondary: #27ae60;
+  --color-background: #2c3e50;
+  --color-text: #95a5a6;
+
+  /* Typography */
+  --body-font: "Nunito", sans-serif;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+
+  @media screen and (min-width: 768px) {
+    :root {
+      --h1-font-size: 2.25rem;
+      --h2-font-size: 1.5rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: 0.875rem;
+    }
+  }
+}
+/* Base */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h3 {
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* CSS CLASS */
+.section {
+  padding: 4rem 0 2 rem;
+}
+.section-title {
+  font-size: var(--h1-font-size);
+  color: var(--color-primary);
+  margin-bottom: var (--mb-3);
+  text-align: center;
+}
+.section-subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  color: var(--color-secondary);
+  text-align: center;
+  font-weight: var(--font-bold);
+  margin-bottom: 0.25rem;
+}
